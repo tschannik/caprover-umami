@@ -2,6 +2,8 @@
 
 Caprover-umami just adds some essential logic to not wipe your database on automatic deploys via docker in Caprover (or on other systems)
 
+Please feel free to open a PR if you want to bump the unami version.
+
 Big credit to the super awesome lightweight selfowned website analytics <3
 
 Please read the original README below
@@ -58,6 +60,7 @@ HASH_SALT=(any random string)
 ```
 
 The connection url is in the following format:
+
 ```
 postgresql://username:mypassword@localhost:5432/mydb
 
@@ -78,7 +81,7 @@ npm run build
 npm start
 ```
 
-By default this will launch the application on `http://localhost:3000`. You will need to either 
+By default this will launch the application on `http://localhost:3000`. You will need to either
 [proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/) requests from your web server
 or change the [port](https://nextjs.org/docs/api-reference/cli#production) to serve the application directly.
 
@@ -91,11 +94,13 @@ docker-compose up
 ```
 
 Alternatively, to pull just the Umami Docker image with PostgreSQL support:
+
 ```bash
 docker pull ghcr.io/mikecao/umami:postgresql-latest
 ```
 
 Or with MySQL support:
+
 ```bash
 docker pull ghcr.io/mikecao/umami:mysql-latest
 ```
