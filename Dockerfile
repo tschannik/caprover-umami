@@ -1,5 +1,5 @@
 # Build image
-FROM ghcr.io/mikecao/umami:postgresql-a2fdab6
+FROM ghcr.io/mikecao/umami:postgresql-ae7186c
 USER root
 
 RUN apk add --no-cache postgresql-client
